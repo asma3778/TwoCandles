@@ -1,0 +1,21 @@
+nav ul {
+    list-style-type: none;
+    font-size: larger;
+    font-weight: bold;
+    padding: 0;
+    padding-right: 25px;
+    margin: 0;
+    display: flex;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+  }
+  
+  nav ul li a {
+    margin-left: 90px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color:rgb(11, 89, 63);
+  }
+  

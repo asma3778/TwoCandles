@@ -1,0 +1,44 @@
+.admin-dashboard {
+    text-align: center;
+}
+
+.admin-sidebar {
+    width: 96%;
+    height: 60px; 
+    background-color: #333;
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 0 20px; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-sidebar nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-sidebar li {
+    margin-bottom: 20px;
+}
+
+.admin-sidebar li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.admin-sidebar li a:hover {
+    background-color: brown;
+}
+
+.admin-sidebar li a:active {
+    background-color: #888;
+}

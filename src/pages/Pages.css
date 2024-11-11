@@ -1,0 +1,45 @@
+.errorimg {
+    height: 600px;
+    width: 800px;
+}
+
+main p {
+    padding: 50px;
+    padding-left: 0;
+    font-size: 30px;
+}
+
+.imageContainer {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.headerImage {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: antiquewhite;
+    color: black;
+    font-size: large;
+    padding: 20px;
+    padding-top: 50px;
+    margin-top: 30px;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-links ul li {
+    margin: 0 10px;
+}

@@ -1,0 +1,45 @@
+.p-register {
+    margin: 0;
+    padding: 10px;
+    font-size: larger;
+}
+
+.user-profile-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.user-profile-card {
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.user-profile-content {
+    padding: 16px;
+}
+
+.user-profile-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.user-profile-info {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.user-profile-info-label {
+    font-weight: bold;
+}
+
+.user-profile-error {
+    text-align: center;
+    color: red;
+    font-size: 1.2rem;
+}
