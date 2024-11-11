@@ -1,10 +1,14 @@
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { USERS_URL } from './config';
+import { useState } from 'react';
+import useUserData from './users/useUserData';
 
 export const useAuth = () => {
 
   const navigate = useNavigate();
+  const [userDetails, setUserDetails] = useState(null);
+  const { userData, loading, error } = useUserData();
 
   const registerUser = async (formData) => {
     try {
@@ -24,8 +28,9 @@ export const useAuth = () => {
           localStorage.setItem("token", res.data);
         }
       })
-      .then(() => getUserData())
-      .then(() => navigate("/"))
+      .then(() => {
+        setUserDetails(userData); 
+        navigate('/');})
       .catch((error) => {
         console.log(error);
         if (error.response.status === 401) {
