@@ -19,7 +19,7 @@ export default function Routers() {
     const { userData, loading } = useUserData();
     const isAuthenticated = Boolean(userData);
 
-    const truncateDescription = (description, length = 100) => {
+    const truncateDescription = (description, length = 50) => {
         return description.length > length ? description.substring(0, length) + '...' : description;
     };
 
